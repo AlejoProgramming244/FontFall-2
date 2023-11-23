@@ -1,0 +1,112 @@
+.header 
+{
+    margin-top: 10px;
+    border-radius: 100px;
+    width: 80%;
+    height: 15%;
+    color: black;
+    background-color: gray;
+    transition: color 0.5s ease, width 0.5s ease, height 0.5s ease, padding-top 0.5s ease; /* Eliminé la transición de background-color aquí */
+    overflow: hidden;
+}
+
+.header:hover 
+{
+    width: 95%;
+    height: 25%;
+    color: white;
+    background-color: lightslategray; /* Agregué el color de fondo aquí para mantenerlo constante al hacer hover */
+}
+
+.header b span:nth-child(1) 
+{
+    display: block;
+    font-size: 40px; /* Tamaño de fuente inicial para el primer span */
+    font-family: 'Courier New', Courier, monospace;
+    transition: font-size 0.5s ease, font-family 0.5s ease;
+}
+
+.header b span:nth-child(2) 
+{
+    display: block;
+    font-size: 30px; /* Tamaño de fuente inicial para el segundo span */
+    transition: font-size 0.5s ease;
+}
+
+
+.header:hover b span:nth-child(1) 
+{
+    font-size: 45px; /* Tamaño de fuente al hacer hover para el primer span */
+}
+
+.header:hover b span:nth-child(2) 
+{
+    font-size: 40px; /* Tamaño de fuente al hacer hover para el segundo span */
+}
+.FootManualGR
+{
+    bottom: 0;
+    background-color: gray;
+    float: none;
+    position: fixed;
+}
+
+.btn_secondary
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family:'Kdam Thmor Pro', sans-serif;
+    text-shadow: 15px 5px 10px black;
+    color: white;
+    background-color: gray;
+    height: 40px;
+    font-size: 20px;
+    transition:height 0.3s ease, backgroud-color 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+.btn_secondary:hover
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family:'Kdam Thmor Pro', sans-serif;
+    font-size: 35px;
+    text-shadow: 15px 5px 10px black;
+    height: 65px;
+    background-color: lightgray;
+    color: black;
+}
+
+Canvas
+{
+    border: 5px double salmon;
+    border-radius: 20px;
+
+    animation-name: no;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+    margin-top: 50px;
+
+    border-radius: 20px;
+    margin-left: 280px;
+
+}
+
+@keyframes no
+{
+    from{box-shadow: 1px 1px 38px black}
+    to{box-shadow: 1px 1px 38px grey}
+}
+
+video
+{
+    margin-left: 50px;
+    margin-top: 70px;
+    padding: 0px;
+    border-radius: 60px;
+    border: 7px green ridge;
+    box-shadow: 10px 10px 10px rgb(203, 235, 135);
+}
+
